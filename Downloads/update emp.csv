@@ -1,6 +1,0 @@
-EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO,ADDRESS
-101,John Doe,Software Engineer,,01/15/2023,75000,,10,"1234 Elm St, Springfield, IL"
-8190,John Doe,Software Engineer,,01/15/2023,75000,,10,"1234 Elm St, Springfield, IL"
-8200,John Doe,Software Engineer,,01/15/2023,75000,,10,"1234 Elm St, Springfield, IL"
-8210,Sarah Lee,Data Scientist,,03/01/2023,80000,,10,"1357 Maple St, Springfield, IL"
-8220,Sarah Lee,Data Scientist,,03/01/2023,80000,,10,"1357 Maple St, Springfield, IL"
