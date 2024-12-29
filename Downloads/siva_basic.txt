@@ -1,0 +1,48 @@
+1. CREATE A TABLE CALLED EMP With below properties 
+
+Col Name	  	Data Type        Constraint ? 
+emp_id    	  	number           Primary Key 
+first_name 		string         	 NOT NULL  
+last_name  		string 
+email			string           NOT NULL
+phone_number	string           NOT NULL
+dept_id			number			 Foreign Key     (reference = DEPARTMENT.department_id)
+address_id		number			 Foreign Key     (reference = ADDRESS.add_id)
+blood_group		string
+dob				date 
+doj				date 
+dot				date 
+created_ts		timestamp 
+reference		string 
+role			string 
+salary			float 
+band			number 
+reports_to      number   	            
+
+DDL-CREATE TABLE EMP3 (
+    emp_id       NUMBER PRIMARY KEY,     
+    first_name   VARCHAR2(100) NOT NULL,      
+    last_name    VARCHAR2(100),               
+    email        VARCHAR2(255) NOT NULL,     
+    phone_number VARCHAR2(15) NOT NULL,       
+    dept_id      NUMBER,                      
+    address_id   NUMBER,                     
+    blood_group  VARCHAR2(5),                
+    dob          DATE,                        
+    doj          DATE,                       
+    dot          DATE,                       
+    created_ts   TIMESTAMP,                   
+    reference    VARCHAR2(255),             
+    role         VARCHAR2(100),              
+    salary       FLOAT,                       
+    band         NUMBER,                      
+    reports_to   NUMBER,                      
+    CONSTRAINT fk_dept_id FOREIGN KEY (dept_id) REFERENCES DEPARTMENT(department_id),
+    CONSTRAINT fk_address_id FOREIGN KEY (address_id) REFERENCES ADDRESS(add_id),
+    CONSTRAINT fk_reports_to FOREIGN KEY (reports_to) REFERENCES EMP3(emp_id)
+);
+
+
+
+
+
