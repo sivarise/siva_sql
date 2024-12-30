@@ -1,0 +1,42 @@
+1. CREATE A TABLE CALLED EMP With below properties 
+
+Col Name	  	Data Type        Constraint ? 
+emp_id    	  	number           Primary Key 
+first_name 		string         	 NOT NULL  
+last_name  		string 
+email			string           NOT NULL
+phone_number	string           NOT NULL
+dept_id			number			 Foreign Key     (reference = DEPARTMENT.department_id)
+address_id		number			 Foreign Key     (reference = ADDRESS.add_id)
+blood_group		string
+dob				date 
+doj				date 
+dot				date 
+created_ts		timestamp 
+reference		string 
+role			string 
+salary			float 
+band			number 
+reports_to      number   	            
+
+DDL- CREATE TABLE "EMP3" 
+   (	"EMP_ID" NUMBER, 
+	"FIRST_NAME" VARCHAR2(100) NOT NULL ENABLE, 
+	"LAST_NAME" VARCHAR2(100), 
+	"EMAIL" VARCHAR2(255) NOT NULL ENABLE, 
+	"PHONE_NUMBER" VARCHAR2(15) NOT NULL ENABLE, 
+	"DEPT_ID" NUMBER, 
+	"ADDRESS_ID" NUMBER, 
+	"BLOOD_GROUP" VARCHAR2(5), 
+	"DOB" DATE, 
+	"DOJ" DATE, 
+	"DOT" DATE, 
+	"CREATED_TS" TIMESTAMP (6), 
+	"REFERENCE" VARCHAR2(255), 
+	"ROLE" VARCHAR2(100), 
+	"SALARY" FLOAT(126), 
+	"BAND" NUMBER, 
+	"REPORTS_TO" NUMBER, 
+	 PRIMARY KEY ("EMP_ID")
+  USING INDEX  ENABLE
+   ) ;
